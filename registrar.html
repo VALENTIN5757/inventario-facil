@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar | Inventario Fácil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div>
+        <strong>INVENTARIO FÁCIL</strong>
+    </div>
+    <nav>
+        <a href="index.html">INICIO</a>
+        <span>|</span>
+        <a href="registrar.html" class="activo">REGISTRAR</a>
+        <span>|</span>
+        <a href="lista.html">LISTA</a>
+        <span>|</span>
+        <a href="productos.html">PRODUCTOS</a>
+        <span>|</span>
+        <a href="acerca.html">ACERCA DE</a>
+        <span>|</span>
+        <a href="ayuda.html">AYUDA</a>
+    </nav>
+</header>
+
+<main class="contenedor-registro">
+    <h2>FORMULARIO DE REGISTRO</h2>
+
+    <form class="formulario">
+        <div class="campo">
+            <label>Nombre del producto:</label>
+            <input type="text" required>
+        </div>
+
+        <div class="campo">
+            <label>Código único:</label>
+            <input type="text" id="codigo">
+            <button type="button" class="boton-escanear" title="Escanear código de barras">📟</button>
+        </div>
+
+        <div class="campo">
+            <label>Categoría:</label>
+            <input type="text">
+        </div>
+
+        <div class="campo">
+            <label>Cantidad en stock:</label>
+            <input type="number" min="0" step="1" placeholder="Ej: 2000">
+        </div>
+
+        <div class="campo">
+            <label>Precio unitario:</label>
+            <span class="simbolo-precio">$</span>
+            <input type="number" min="0" step="0.01" placeholder="Ej: 15500">
+        </div>
+
+        <div class="campo">
+            <label>Descripción:</label>
+            <input type="text">
+        </div>
+
+        <div class="botones">
+            <button type="submit" class="btn-azul">GUARDAR</button>
+            <button type="reset" class="btn-blanco">LIMPIAR CAMPOS</button>
+        </div>
+    </form>
+</main>
+
+<footer>
+    © 2026 Inventario Fácil | Todos los derechos reservados
+</footer>
+
+</body>
+</html>
